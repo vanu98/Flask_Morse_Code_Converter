@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+.button{
+  visibility: hidden;
+}
+</style>
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylee.css') }}">
+   </head>
+<body>
+<div class="login-box">
+  <h2>Morse code coverter</h2>
+  <form action = "http://localhost:5000/convert" method = "POST">
+    <div class="user-box">
+      <input type="text" name="code" required="">
+      <label>Morse code</label>
+    </div>
+<!--    <div class="user-box">
+      <input type="Password" name="" required="">
+      <label>English</label>
+    </div>-->
+    <a href="">
+	<input class="button"type="submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    Convert
+	</a>
+  </form>
+</div>
+</body>
+</html>
